@@ -1,9 +1,9 @@
 # EcommDB
 EcommDB is an E-commerce Database driven by a Flask(Python) based web application.
 
-EcommDB allows you to buy products online and make safe payments to the suppliers(also chose from different suppliers).You also have anoption of tracking down your order.(Security functionality is dummy in this project as for now.)
+EcommDB allows you to buy products online and make safe payments to the suppliers(also chose from different suppliers). You also have an option of tracking down your order.(Security functionality is dummy in this project as for now.)
 
-I made this as a part of my DBMS mini-project where we were asked to build an application so as to demonstrate the interacion of a web-application with a relational database and to perform some basic CRUD operations on the database.
+I made this as a part of my DBMS mini-project where we were asked to build an application so as to demonstrate the interaction of a web-application with a relational database and to perform some basic CRUD operations on the database.
 
 ### The database chosen in this project is postgresql.I have used flask-sqlalchemy(an ORM) on top of it.You would have to make some changes in code if you use a different ORM or database.
 
@@ -16,7 +16,7 @@ I made this as a part of my DBMS mini-project where we were asked to build an ap
     pip install psycopg2
     pip install flask-sqlalchemy
 
-Other basic reqirements can be seen from the requirements.txt file.
+Other basic requirements can be seen from the requirements.txt file.
 
 ## Setting up postgresql
 
@@ -31,14 +31,14 @@ Follow the following commands to set up a database with user access.
     CREATE DATABASE db_name;
     GRANT ALL PRIVILEGES ON DATABASE db_name to username;
 
-This will set up a database with a user and password for external applications to access the database.You will require the username,database name and the password to set up the flask app to querry from the database
+This will set up a database with a user and password for external applications to access the database. You will require the username,database name and the password to set up the flask app to query from the database
 
 ## File Structure-
 
 ### 1.flask_app.py
 This python file is the main app that starts the local host and thus the application itself.
 ### 2.views.py
-This python file contains the code for ruting of the app to different references and also rendering of HTML files.
+This python file contains the code for routing of the app to different references and also rendering of HTML files.
 This also contains the interactions with the database.
 
 The code in views.py could be put in flask_app.py itself.
